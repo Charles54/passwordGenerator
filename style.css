@@ -2,16 +2,27 @@
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
+    margin-top: 50px;
+    @media max-width(576px){
+      max-width: 100%;
+    }
+    box-shadow: 5px 5px 5px gray;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: greenyellow;
+
   }
   
   h1 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    
   }
   
   .form {
     display: inline-block;
-    text-align: left;
+    text-align: center;
+
   }
   
   label {
@@ -25,6 +36,18 @@
   
   button {
     margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  button:hover{
+    padding: 15px;
   }
   
   #password {
@@ -35,5 +58,7 @@
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    text-align: center;
   }
   
